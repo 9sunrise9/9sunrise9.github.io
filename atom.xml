@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>9sunrise9&#39;s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://9sunrise9.github.io/"/>
+  <updated>2017-09-17T12:03:06.605Z</updated>
+  <id>https://9sunrise9.github.io/</id>
+  
+  <author>
+    <name>9sunrise9</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python读写Excel举例</title>
+    <link href="https://9sunrise9.github.io/2017/09/17/python%E8%AF%BB%E5%86%99Excel%E4%B8%BE%E4%BE%8B/"/>
+    <id>https://9sunrise9.github.io/2017/09/17/python读写Excel举例/</id>
+    <published>2017-09-17T11:45:45.000Z</published>
+    <updated>2017-09-17T12:03:06.605Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>python操作Excel的一个实例，通过python将Excel中经纬度数据变换成两列。<br><a id="more"></a><br>原始数据如图</p>
+<p><img src="http://ovhahnebz.bkt.clouddn.com/%E5%89%8D.png" alt=""></p>
+<p>代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import xlrd</div><div class="line">import xlwt</div><div class="line"></div><div class="line">data = xlrd.open_workbook(&apos;/Users/sunyue/Desktop/212.xlsx&apos;)</div><div class="line">table = data.sheet_by_name(u&apos;Sheet1&apos;)</div><div class="line">number = table.col_values(0)</div><div class="line">x = []</div><div class="line">y = []</div><div class="line">workbook = xlwt.Workbook()</div><div class="line">worksheet = workbook.add_sheet(&apos;My Worksheet&apos;)</div><div class="line">	</div><div class="line">for i in range(len(number)):</div><div class="line">	worksheet.write(i, 0, label=number[i].split()[0])</div><div class="line">	worksheet.write(i, 1, label=number[i].split()[1])</div><div class="line">    </div><div class="line">workbook.save(&apos;/Users/sunyue/Desktop/Excel_Workbook.xls&apos;)</div></pre></td></tr></table></figure>
+<p>修改后结果如下</p>
+<p><img src="http://ovhahnebz.bkt.clouddn.com/%E5%90%8E.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;python操作Excel的一个实例，通过python将Excel中经纬度数据变换成两列。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="python" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/python/"/>
+    
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="python" scheme="https://9sunrise9.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Teechart编程总结</title>
+    <link href="https://9sunrise9.github.io/2017/09/06/Teechart%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/"/>
+    <id>https://9sunrise9.github.io/2017/09/06/Teechart编程总结/</id>
+    <published>2017-09-06T06:52:37.000Z</published>
+    <updated>2017-09-08T06:53:52.932Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>官方网站:<a href="https://www.steema.com" target="_blank" rel="external">steema.teechart</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装试用包并用破解ocx替换"><a href="#安装试用包并用破解ocx替换" class="headerlink" title="安装试用包并用破解ocx替换"></a>安装试用包并用破解ocx替换</h3><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ol>
+<li><p><a href="http://blog.csdn.net/czyt1988/article/details/7428415" target="_blank" rel="external">VS2010 使用TeeChart绘图控件</a> </p>
+</li>
+<li><p><a href="http://blog.csdn.net/lemonab/article/details/8182171" target="_blank" rel="external">很全的TeeChart基础教程</a></p>
+</li>
+</ol>
+<h2 id="用法梗概"><a href="#用法梗概" class="headerlink" title="用法梗概"></a>用法梗概</h2><p>需要对某个类对象进行编程就插入并包含这个类，再用 <code>m_chart1</code> 子函数获取这个类的<br>指针。例如改变某一个平面(<code>wall</code>)的背景颜色:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">((CWall)((CWalls)m_chart3.get_Walls()).get_Right()).put_Color(RGB(255, 0, 0));</div></pre></td></tr></table></figure></p>
+<p>先用 <code>get_walls()</code> 找到一个<code>walls</code>对象，再使用 <code>get_Right()</code> 获取又平面对象再进行操作。 </p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>teechart控件本身不是线程安全的，所以切不可从主线程外调用相关函数，也即不能从 定时器的全局回调函数直接调用。</p>
+<blockquote>
+<p>解决方案:使用<code>onTimer</code>定时器定时触发事件响应，该响应优先级较低，不会影 响主要逻辑的运行。或者使用 <code>Postmassage()</code> 函数在全局定时器回调函数中向主 窗口发消息，与 <code>Sendmassege()</code> 相比， <code>Postmassege()</code> 消息不会等待相应函数执 行完成才返回。</p>
+</blockquote>
+<p>包含头文件后编译错误的修改方法，屏蔽头文件开头的<code>import</code>语句。<code>import</code>语句导致<code>.ocx</code>文件重复引入。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//#import &quot;D:\\Program Files (x86)\\Steema Software\\TeeChart Pro v2016 ActiveX Evaluation\\TeeChart2016.ocx&quot; no_namespace</div></pre></td></tr></table></figure>
+<h3 id="2d曲线"><a href="#2d曲线" class="headerlink" title="2d曲线"></a>2d曲线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">LeftMoveArray(m_Y, m_c_arrayLength, m_FStForce[0]);</div><div class="line">LeftMoveArray(m_X, m_c_arrayLength, m_Timebase);</div><div class="line">DrawLine(m_X, m_Y, m_c_arrayLength);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">void CWindDlg::LeftMoveArray(double* ptr, size_t length, double data)</div><div class="line">&#123;</div><div class="line">    for (size_t i = 1;i &lt; length;++i)</div><div class="line">    &#123;</div><div class="line">         ptr[i ‐ 1] = ptr[i];</div><div class="line">    &#125;</div><div class="line">    ptr[length ‐ 1] = data;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">void CWindDlg::DrawLine(double* pX, double* pY, long nNum)</div><div class="line">&#123;</div><div class="line">    COleSafeArray XValues;</div><div class="line">    COleSafeArray YValues;</div><div class="line">    long i(0);</div><div class="line">    DWORD wLength = nNum;</div><div class="line">    XValues.Create(VT_R8, 1, &amp;wLength);</div><div class="line">    YValues.Create(VT_R8, 1, &amp;wLength);</div><div class="line">    for (i = 0; i &lt; nNum; i++)</div><div class="line">    &#123;</div><div class="line">         XValues.PutElement(&amp;i, pX + i);</div><div class="line">         YValues.PutElement(&amp;i, pY + i);</div><div class="line">    &#125;</div><div class="line">         ((CSeries)m_chart1.Series(0)).Clear();</div><div class="line">         ((CSeries)m_chart1.Series(0)).AddArray(nNum, YValues, XValues);</div><div class="line">         ((CSeries)m_chart1.Series(0)).put_Color(RGB(0, 0, 255));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3d曲线及坐标显示-把坐标格式化成label"><a href="#3d曲线及坐标显示-把坐标格式化成label" class="headerlink" title="3d曲线及坐标显示(把坐标格式化成label)"></a>3d曲线及坐标显示(把坐标格式化成label)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">((CSeries)m_chart3.Series(0)).Clear();</div><div class="line">CString label;</div><div class="line">label.Format(_T(&quot;%0.1f,%0.1f,%0.1f&quot;), 6.5, 90.5, 150.5);</div><div class="line">((CPoint3DSeries)((CSeries)m_chart3.Series(0)).get_asPoint3D()).AddXYZ(6, 90, 150,</div><div class="line">label, RGB(0, 255, 255));</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;官方网站:&lt;a href=&quot;https://www.steema.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;steema.teechart&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="Teechart" scheme="https://9sunrise9.github.io/tags/Teechart/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MFC多对话框调用</title>
+    <link href="https://9sunrise9.github.io/2017/09/05/MFC%E5%A4%9A%E5%AF%B9%E8%AF%9D%E6%A1%86%E8%B0%83%E7%94%A8/"/>
+    <id>https://9sunrise9.github.io/2017/09/05/MFC多对话框调用/</id>
+    <published>2017-09-05T12:08:47.000Z</published>
+    <updated>2017-09-05T12:58:44.506Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在MFC对话框编程中添加一个字对话框，并且在子对话框中能够访问主对话框（父对话框）的成员变量并且能够实现对子对话框界面元素的刷新方法。</p>
+<a id="more"></a>
+<h2 id="插入子对话框"><a href="#插入子对话框" class="headerlink" title="插入子对话框"></a>插入子对话框</h2><p>假设主对话框为<code>CRainDlg</code>，在资源视图中插入一个子对话框命名为<code>CWindlg</code>。步骤如下。</p>
+<ol>
+<li>在“资源视图”中添加一个新的对话框。右键<code>Dialog</code>，选择“添加资源”；</li>
+<li>在弹出的对话框中双击<code>Dialog</code>，即实现新建一个对话框。默认名字为<code>IDD_DIALOG1</code>;</li>
+</ol>
+<h2 id="问题情景"><a href="#问题情景" class="headerlink" title="问题情景"></a>问题情景</h2><p>主对话框是应用程序的主要界面，完成通讯、逻辑判断、状态显示、指令下发等功能。但由于屏幕尺寸或设计功能限制，往往出现状态量不能全部显示在主对话框上的问题。这时候可以插入一个新的子对话框，在子对话框上显示详细信息，主对话框只做缩略显示，并在用户需要时点击特定按钮时弹出这个对话框。</p>
+<p>这时候就牵扯到如何让子对话框访问主对话框的成员变量，以完成显示功能。最简单的的方法是在主对话框界面定时刷新的时候调用子对话框的某个成员函数，例如<code>CWindlg::LightFunction()</code>。这个成员函数的功能是访问<code>CRainDlg</code>的某些表示系统状态的变量，并将其显示在子对话框中。要实现这个功能涉及到三个方面的问题：</p>
+<ol>
+<li>从主对话框中生成并显示子对话框；</li>
+<li><p>子对话框访问主对话框的成员变量,并从全局定时器中访问子对话框的某个成员函数。</p>
+<blockquote>
+<p>需要注意的一个问题是，<code>CWnd</code>的<code>onTimer</code>定时器运行在主线程中，当定时触发时MFC对话框接收到<code>onTimer</code>消息，响应这个消息以实现定时。但中由于消息队列的存在，这个函数往往不能实现高精度定时（例如50ms或一下）。因此往往使用多媒体定时器<code>TimerQueueTimer</code>实现高精度定时，具体用法参见<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682485(v=vs.85" target="_blank" rel="external">MDSDN-CreateTimerQueueTimer function</a>.aspx).</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="从主对话框中生成并显示子对话框"><a href="#从主对话框中生成并显示子对话框" class="headerlink" title="从主对话框中生成并显示子对话框"></a>从主对话框中生成并显示子对话框</h3><pre><code>在主对话框中添加一个按钮用以显示子对话框。显示子对话框的步骤是：
+
+1. 在这个按钮的消息响应函数中新建并初始化一个子对话框类指针变量；
+2. 将这个变量和子对话框的ID号进行绑定；
+3. 将这个对话框设置为`SW_SHOW`。
+</code></pre><p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">void CRainDlg::onButtonClick()</div><div class="line">&#123;</div><div class="line">	CWindDlg *pWind = new CwindDlg()；  //实例化一个pWind指针</div><div class="line">	pWind-&gt;Create(IDD_DIALOG1,this);   //生成WindDlg</div><div class="line">    pWind-&gt;ShowWindow(SW_SHOW);        //显示对话框</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>需要引起注意的是，声明一个新的类指针和初始化它是两个概念。声明一个类指针并不会给这个指针分配地址，只有初始化这个类指针的时候会给这个指针分配地址，并且会调用这个类的构造函数。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p>另外涉及到一个C++中特殊的指针，<code>this</code>指针，只想当前窗口。<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+</blockquote>
+<h3 id="子对话框访问主对话框的成员变量"><a href="#子对话框访问主对话框的成员变量" class="headerlink" title="子对话框访问主对话框的成员变量"></a>子对话框访问主对话框的成员变量</h3><ol>
+<li><p>在主对话框中保存<code>CRainDlg</code>对话框的句柄<br>在CRainD.cpp文件中添加一个全局变量<code>CRainDlg *pRain</code>并将函数<code>InitInstance()</code>做如下改动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">CRainDlg dlg;</div><div class="line"> m_pMainWnd = &amp;dlg;</div><div class="line"> pRain = (CRainDlg*) m_pMainWnd;</div><div class="line"> INT_PTR nResponse = dlg.DoModal();</div></pre></td></tr></table></figure>
+</li>
+<li><p>在<code>CWindDlg</code>中通过添加一个全局变量<code>extern CRainDlg *pRain</code>的方式在<code>CWindDlg</code>中访问。这样在<code>CWindDlg</code>的成员函数中就可以通过<code>pRain</code>指针访问<code>CRainDlg</code>的成员变量和成员函数了。</p>
+</li>
+</ol>
+<blockquote>
+<p>在类外访问主对话框句柄的方法 <code>CRainDlg *pRain = (CRainDlg *)AfxGetMainWnd();</code> 如果在<code>CRainDlg</code>类中调用<code>CWindDlg</code>并在<code>CWindDlg</code>中访问<code>CRainDlg</code>类中的成员变量的时候可以在函数局部使用这个方法，但从全局定时器中调用<code>CWindDlg</code>中的函数去访问<code>CRainDlg</code>的变量时，不能使用这种方法，在执行<code>CRainDlg *pRain = (CRainDlg *)AfxGetMainWnd();</code>的时候会显示<code>pRain</code>为空值.</p>
+</blockquote>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="http://blog.sina.com.cn/s/blog_49cb42490100nm3n.html" target="_blank" rel="external">如何在VC++中两个对话框相互传递信息</a></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="http://blog.csdn.net/tham_/article/details/44906571" target="_blank" rel="external">C++ 对象和实例的区别，以及用new和不用new创建类对象区别</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://c.biancheng.net/cpp/biancheng/view/201.html" target="_blank" rel="external">C++ this指针详解</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在MFC对话框编程中添加一个字对话框，并且在子对话框中能够访问主对话框（父对话框）的成员变量并且能够实现对子对话框界面元素的刷新方法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="C++" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/C/"/>
+    
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="C++" scheme="https://9sunrise9.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小摘抄</title>
+    <link href="https://9sunrise9.github.io/2017/09/04/%E5%B0%8F%E6%91%98%E6%8A%84/"/>
+    <id>https://9sunrise9.github.io/2017/09/04/小摘抄/</id>
+    <published>2017-09-04T11:19:11.000Z</published>
+    <updated>2017-09-09T12:16:27.126Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>倾侧角幅值在0到90度之间<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br><a id="more"></a></p>
+<hr>
+<blockquote>
+<p>For the Space Shuttle Orbiter, the hypersonic $L/D$ is 1.50 and the angle of attack can be adjusted within limits. Although bank angle changes are the primary means of fight-path control, the Shuttle guidance commands <em>angle of attack changes during bank reversals</em> to maintain the desired vertical lift. The features of Mars precision landing that drive our implementation and require some modi  cations relative to the Shuttle guidance are:</p>
+<ol>
+<li>the lander has a very low $L/D$ ratio, in the range 0.06–0.18;</li>
+<li><em>the angle of attack cannot be adjusted to control the fight path;</em></li>
+<li><em>the attitude control system uses $1-lb$ thrusters, which significantly limits the maximum bank angle rate and acceleration; </em></li>
+<li><em>the atmospheric density uncertainty along an entry trajectory can be as large as 40%.</em></li>
+</ol>
+</blockquote>
+<p>倾侧角翻转时公交可能发生变化，以维持升力；飞行过程中攻角无法调整；姿态控制系统限制最大倾侧角速率和倾侧角加速度；空气密度不确定性可能达到40%。<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+<hr>
+<p>一组参数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+<p><img src="http://ovhahnebz.bkt.clouddn.com/%E4%B8%80%E7%BB%84%E5%8F%82%E6%95%B0.png" alt=""></p>
+<blockquote>
+<script type="math/tex; mode=display">Bf = \frac{m}{C_D S}</script></blockquote>
+<hr>
+<p>The more comprehensive challenges are summarized as follows:<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+<ol>
+<li>The Mars atmospheric entry dynamics is described by highly <em>nonlinear time-variant differential equations</em>, and the control variables are implicitly included in the equations of motion. Therefore, it is difficult to perform the trajectory optimization and guidance and control design.</li>
+<li>Relative to the Earth, <em>the Martian atmosphere is approximately 100 times thinner</em>, making it impossible to provide adequate deceleration at high altitudes, and therefore making it difficult for Mars entry vehicles to reach high-elevation sites .</li>
+<li>The typical geometry of entry vehicles is a <em>low lifting body configuration</em> that only provides a very small amount of aerodynamic lift and hence a small capability to correct trajectory errors and provide an accurate delivery. The low control authority of entry vehicles inevitably leads to larger entry and landing errors in the presence of uncertainties.</li>
+<li>There are <em>large uncertainties about the Martian atmosphere</em> and the aerodynamic parameters of entry vehicles. Advanced guidance and control with high accuracy and adaptability are required to achieve high entry accuracy and deliver a vehicle to a high-elevation landing site [94,102]. At the same time, high reliability and fault-tolerant control capabilities are also required to ensure the safety of the crew of future manned Mars landing missions [74,103–107].<strong>高精度和自适应制导率、可靠和容错的控制能力。</strong></li>
+<li>The Martian atmospheric environment is rather complex, which makes it hard to be accurately modeled and simulated on the ground. The design process of trajectory planning, guidance and control for Mars atmospheric entry heavily depends on Monte <em>Carlo simulation</em>.</li>
+</ol>
+<blockquote>
+<p>capsule - 胶囊，航天舱</p>
+</blockquote>
+<hr>
+<p>The entry guidance is divided into three distinct phases:<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<ol>
+<li><em>Pre-bank</em>. The entry capsule maneuvers into the pre-bank attitude minutes prior to entering the atmosphere. An angle-of-attack is commanded that is similar to the expected trim angle. The commanded bank angle is constant at a pre-bank value associated with the initial nominal bank angle. This is intended to reduce the propellant usage by attempting to begin atmospheric flight near the trim angle of attack and the first commanded bank angle expected.</li>
+<li><em>Range Control</em>. <em>Once the filtered drag acceleration magnitude climbs past $0.2g$, the GNC flight software has determined that the vehicle has entered the sensible Martian atmosphere and begins range control.</em> During this phase the entry guidance is predicting the downrange flown and commands a bank angle to correct for any range errors. Simultaneously, the guidance is monitoring the cross-range to the target and will command a bank reversal whenever the cross-range crosses a dead-band threshold. This ensures that the cross-range, although not directly controlled, will be managed within a magnitude correctable during the next phase.</li>
+<li><em>Heading Alignment</em>. Once the estimated velocity has dropped past $1100m/s$, the guidance ceases range control and begins heading alignment. The bank angle is commanded to steer the vehicle to fly towards the target deploy coordinates. By limiting the magnitude of the commanded bank angle to 15 degrees, it is ensured that most of the lift is countering gravity. This thereby increasing the parachute deploy altitude.</li>
+</ol>
+<p>ETPC Modifications:</p>
+<ol>
+<li><em>Variable bank reference profile</em>. The original Apollo guidance, from which ETPC is derived, assumed a constant bank reference profile which resulted in a constant vertical L/D reference term. For Mars landers seeking to increase the deployment altitude, a variable bank profile is used to provide higher deploy altitudes while reserving range control authority at high speeds. This results in the vertical L/D reference term changing as a function of velocity. This provides more flexibility in trajectory design and has been critical to meeting the project requirements for MSL while the entry mass and ballistic coefficient has gradually increased.</li>
+<li>Vertical L/D command limiter. Studies by A.D.Cianciolo at NASA Langley Research Center demonstrated that the early algorithms of entry guidance may not be robust in the presence of unexpected, large density shears that occur in the altitudes during which the vehicle flies with a flight path angle close to zero, such as late in range control and throughout heading alignment. Such shears have been observed in many Shuttle flights at Earth in atmospheric densities comparable to those MSL will fly within at Mars.# These shears resulted in increases in the deployment ellipse size and several kilometers loss in altitude. It is expected that severe wind shears may result in similar behavior. To reduce the responsiveness of the entry guidance to such severe dispersions, a vertical L/D command limiter has been implemented.</li>
+</ol>
+<p>HEADING ALIGNMENT LOGIC</p>
+<p>When the velocity becomes less than approximately $1100 m/s%, the effectiveness of bank angle modulation in controlling down-track errors becomes significantly diminished. At this point the bank commands are switched to a heading alignment controller instead, which aligns the vehicle velocity heading with the target, nulling the cross-range error when the target is reached.</p>
+<p>The commanded bank angle is proportional to the current azimuth error to the target, defined by the cross-range, $R_c$, and downrange, R, to the target as shown in equation.</p>
+<script type="math/tex; mode=display">\sigma = \tan^{-1}\frac{R_C}{R}</script><p>As mentioned, the commanded bank angle is not allowed to return a value greater than 15 degrees magnitude in this phase in order to increase the deploy altitude while still allowing some reduction of cross-range error.</p>
+<blockquote>
+<p>当速度低于1000m/s的时候，通过横程和纵程改变倾侧角的方法已经效果不好了。这时采用<em>heading alignment controller</em>的方法，让速度朝向目标，来消除到达目标时的误差。这个阶段不允许倾侧角指令超过$15^o$，这是为了增加开伞点高度，并且仍然保留一定消除横程误差的能力。</p>
+</blockquote>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.sciencedirect.com/science/article/pii/S0273117715000800" target="_blank" rel="external">A 6DOF mathematical model of parachute in Mars EDL</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://arc.aiaa.org/doi/pdf/10.2514/2.4607" target="_blank" rel="external">Drag-Based Predictive Tracking Guidance for Mars Precision Landing</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="http://ac.els-cdn.com/S1270963815000991/1-s2.0-S1270963815000991-main.pdf?_tid=7721e79c-914a-11e7-b40b-00000aacb361&amp;acdnat=1504513647_9b44cb686d560133ab0a16b58097a897" target="_blank" rel="external">RBF neural network based second-order sliding mode guidance for Mars entry under uncertainties</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.sciencedirect.com/science/article/pii/S0376042114000517?via%3Dihub" target="_blank" rel="external">Review and prospect of guidance and control for Mars atmospheric entry</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;"><a href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20110003649.pdf" target="_blank" rel="external">Mars Science Laboratory Entry Guidance</a></span><a href="#fnref:5" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;倾侧角幅值在0到90度之间&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="积累" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/tags/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="积累" scheme="https://9sunrise9.github.io/tags/%E7%A7%AF%E7%B4%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 搭建小记</title>
+    <link href="https://9sunrise9.github.io/2017/08/30/hexo-%E6%90%AD%E5%BB%BA%E5%B0%8F%E8%AE%B0/"/>
+    <id>https://9sunrise9.github.io/2017/08/30/hexo-搭建小记/</id>
+    <published>2017-08-30T12:58:45.000Z</published>
+    <updated>2017-09-04T12:10:58.989Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>🎉花了一晚上的时间搭好了hexo并且搞了一些简单的小设置，目前暂时可以用了。一些功能还得慢慢研究。</p>
+<a id="more"></a>
+<p><em>慢慢再写</em></p>
+<h2 id="Github设置"><a href="#Github设置" class="headerlink" title="Github设置"></a>Github设置</h2><h2 id="hexo环境搭建"><a href="#hexo环境搭建" class="headerlink" title="hexo环境搭建"></a>hexo环境搭建</h2><h2 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h2><h2 id="音乐和视频插入"><a href="#音乐和视频插入" class="headerlink" title="音乐和视频插入"></a>音乐和视频插入</h2><h2 id="头像与图片插入"><a href="#头像与图片插入" class="headerlink" title="头像与图片插入"></a>头像与图片插入</h2><h2 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h2><h3 id="mathJax"><a href="#mathJax" class="headerlink" title="mathJax"></a>mathJax</h3><p>正文mathJax需要改写<code>\hexo\themes\next\layout\_scripts\third-party\mathjax.swig</code></p>
+<p>去掉<code>if not theme.mathjax.per_page or (page.total or page.mathjax)</code> </p>
+<p>或改为<br><code>if theme.mathjax.per_page or (page.total or page.mathjax)</code></p>
+<p>👉<a href="https://hujichn.github.io/2016/04/06/Win10上利用github+hexo建立博客的方法/" target="_blank" rel="external">这里</a></p>
+<h3 id="footnote"><a href="#footnote" class="headerlink" title="footnote"></a>footnote</h3><p>更换markdown 渲染器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;🎉花了一晚上的时间搭好了hexo并且搞了一些简单的小设置，目前暂时可以用了。一些功能还得慢慢研究。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="折腾" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="hexo" scheme="https://9sunrise9.github.io/categories/%E6%8A%98%E8%85%BE/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://9sunrise9.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cover.连衣裙</title>
+    <link href="https://9sunrise9.github.io/2017/08/30/%5BCover%5D%E8%BF%9E%E8%A1%A3%E8%A3%99/"/>
+    <id>https://9sunrise9.github.io/2017/08/30/[Cover]连衣裙/</id>
+    <published>2017-08-30T02:22:49.000Z</published>
+    <updated>2017-08-31T02:32:19.463Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一年多以前简单记录的一首歌，最后看了一眼谱子还弹错了。就当是视频test吧。<br><a id="more"></a></p>
+<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://ovhahnebz.bkt.clouddn.com/%E8%BF%9E%E8%A1%A3%E8%A3%99_cover_video.mp4","pic":" http://ovhahnebz.bkt.clouddn.com/%E8%BF%9E%E8%A1%A3%E8%A3%99_cover.png"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://dplayer.daoapp.io/bilibili?aid"]}});</script><!-- dplayer used1 -->
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一年多以前简单记录的一首歌，最后看了一眼谱子还弹错了。就当是视频test吧。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Guitar" scheme="https://9sunrise9.github.io/categories/Guitar/"/>
+    
+      <category term="cover" scheme="https://9sunrise9.github.io/categories/Guitar/cover/"/>
+    
+    
+      <category term="Guitar" scheme="https://9sunrise9.github.io/tags/Guitar/"/>
+    
+      <category term="cover" scheme="https://9sunrise9.github.io/tags/cover/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最近在练的谱子</title>
+    <link href="https://9sunrise9.github.io/2017/08/29/%E6%9C%80%E8%BF%91%E5%9C%A8%E7%BB%83%E7%9A%84%E8%B0%B1%E5%AD%90/"/>
+    <id>https://9sunrise9.github.io/2017/08/29/最近在练的谱子/</id>
+    <published>2017-08-29T11:18:25.000Z</published>
+    <updated>2017-08-31T02:30:40.554Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>最近在为下个月的一次小表演做准备，于是重新开始坚持练习，找到一些不错的歌，虽然有些不见的适合表演的场景，但是每一首难度适中，并且都很优美。所以总结起来，也方便自己随时查看。<br><a id="more"></a></p>
+<blockquote>
+<p>感谢谱子的作者们！本文谱子来源网络转载。侵删。</p>
+</blockquote>
+<h2 id="只道寻常"><a href="#只道寻常" class="headerlink" title="只道寻常"></a><a href="http://m.jitaba.cn/view.php?aid=9088" target="_blank" rel="external">只道寻常</a></h2><p><em>网易云音乐版权保护不能生成外链，地址在👉<a href="https://music.163.com/#/song?id=450048216" target="_blank" rel="external">这里</a></em></p>
+<p><img src="http://www.jitaba.cn/upimg/allimg/1701/1-1F11P03636.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1701/1-1F11P03636-50.jpg" alt=""></p>
+<h2 id="农夫渔夫"><a href="#农夫渔夫" class="headerlink" title="农夫渔夫"></a><a href="http://www.xiayiqu.com/pu/1165.html" target="_blank" rel="external">农夫渔夫</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=350760&auto=1&height=66"></iframe>
+
+<p><img src="http://www.xiayiqu.com/uploads/allimg/140204/1_140204215012_1.gif" alt=""></p>
+<h2 id="下雨的晚上"><a href="#下雨的晚上" class="headerlink" title="下雨的晚上"></a><a href="http://guitaristlou.pixnet.net/blog/post/360319904-下雨的晚上---黃玠" target="_blank" rel="external">下雨的晚上</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26620072&auto=1&height=66"></iframe>
+
+<p><img src="http://pic.pimg.tw/guitaristlou/1396235511-1895220529_l.jpg" alt=""><br><img src="http://pic.pimg.tw/guitaristlou/1396235516-2331221022_l.jpg" alt=""><br><img src="http://pic.pimg.tw/guitaristlou/1396235518-1419048928_l.jpg" alt=""></p>
+<h2 id="孤鸟的歌"><a href="#孤鸟的歌" class="headerlink" title="孤鸟的歌"></a><a href="http://www.jitaba.cn/jitapu/122013/5600.html" target="_blank" rel="external">孤鸟的歌</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=29715557&auto=1&height=66"></iframe>
+
+<p><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_1.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_2.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_3.jpg" alt=""></p>
+<h2 id="秋酿"><a href="#秋酿" class="headerlink" title="秋酿"></a><a href="http://www.ccguitar.cn/wy_html/564565830.htm" target="_blank" rel="external">秋酿</a></h2><p><em>网易云音乐版权保护不能生成外链，地址在👉<a href="https://music.163.com/#/song?id=30635613" target="_blank" rel="external">这里</a></em></p>
+<p><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/1.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/2.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/3.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/4.gif" alt=""></p>
+<h2 id="旅行的意义"><a href="#旅行的意义" class="headerlink" title="旅行的意义"></a><a href="http://www.ukulelecn.com/p/?p=675" target="_blank" rel="external">旅行的意义</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=209326&auto=1&height=66"></iframe>
+
+<p><img src="http://www.ukulelecn.com/p/wp-content/uploads/2017/03/第五节.jpg" alt=""><br><img src="http://www.ukulelecn.com/p/wp-content/uploads/2017/03/第五节四线谱.jpg" alt=""></p>
+<p>未完待续。。。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在为下个月的一次小表演做准备，于是重新开始坚持练习，找到一些不错的歌，虽然有些不见的适合表演的场景，但是每一首难度适中，并且都很优美。所以总结起来，也方便自己随时查看。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Guitar" scheme="https://9sunrise9.github.io/categories/Guitar/"/>
+    
+      <category term="谱子" scheme="https://9sunrise9.github.io/categories/Guitar/%E8%B0%B1%E5%AD%90/"/>
+    
+    
+      <category term="Guitar" scheme="https://9sunrise9.github.io/tags/Guitar/"/>
+    
+  </entry>
+  
+</feed>
