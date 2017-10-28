@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9sunrise9.github.io/"/>
-  <updated>2017-09-17T12:03:06.605Z</updated>
+  <updated>2017-09-20T05:14:12.659Z</updated>
   <id>https://9sunrise9.github.io/</id>
   
   <author>
@@ -16,11 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Reinforcement Learning Guidance</title>
+    <link href="https://9sunrise9.github.io/2017/09/20/Guidance/"/>
+    <id>https://9sunrise9.github.io/2017/09/20/Guidance/</id>
+    <published>2017-09-20T05:11:14.000Z</published>
+    <updated>2017-09-20T05:14:12.659Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="http://ieeexplore.ieee.org/document/7004667/" target="_blank" rel="external">Adaptive Pinpoint and Fuel Efficient Mars Landing Using Reinforcement Learning</a></p>
+<a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://ieeexplore.ieee.org/document/7004667/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adaptive Pinpoint and Fuel Efficient Mars Landing Using Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="RL" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/RL/"/>
+    
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/tags/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="RL" scheme="https://9sunrise9.github.io/tags/RL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python读写Excel举例</title>
     <link href="https://9sunrise9.github.io/2017/09/17/python%E8%AF%BB%E5%86%99Excel%E4%B8%BE%E4%BE%8B/"/>
     <id>https://9sunrise9.github.io/2017/09/17/python读写Excel举例/</id>
     <published>2017-09-17T11:45:45.000Z</published>
-    <updated>2017-09-17T12:03:06.605Z</updated>
+    <updated>2017-09-17T12:04:31.115Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>python操作Excel的一个实例，通过python将Excel中经纬度数据变换成两列。<br><a id="more"></a><br>原始数据如图</p>
 <p><img src="http://ovhahnebz.bkt.clouddn.com/%E5%89%8D.png" alt=""></p>
@@ -296,23 +324,27 @@
     <link href="https://9sunrise9.github.io/2017/08/29/%E6%9C%80%E8%BF%91%E5%9C%A8%E7%BB%83%E7%9A%84%E8%B0%B1%E5%AD%90/"/>
     <id>https://9sunrise9.github.io/2017/08/29/最近在练的谱子/</id>
     <published>2017-08-29T11:18:25.000Z</published>
-    <updated>2017-08-31T02:30:40.554Z</updated>
+    <updated>2017-10-28T02:57:30.962Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>最近在为下个月的一次小表演做准备，于是重新开始坚持练习，找到一些不错的歌，虽然有些不见的适合表演的场景，但是每一首难度适中，并且都很优美。所以总结起来，也方便自己随时查看。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>更新一波<br><a id="more"></a></p>
 <blockquote>
 <p>感谢谱子的作者们！本文谱子来源网络转载。侵删。</p>
 </blockquote>
-<h2 id="只道寻常"><a href="#只道寻常" class="headerlink" title="只道寻常"></a><a href="http://m.jitaba.cn/view.php?aid=9088" target="_blank" rel="external">只道寻常</a></h2><p><em>网易云音乐版权保护不能生成外链，地址在👉<a href="https://music.163.com/#/song?id=450048216" target="_blank" rel="external">这里</a></em></p>
+<h2 id="其实都没有"><a href="#其实都没有" class="headerlink" title="其实都没有"></a><a href="http://www.ccguitar.cn/wy_html/374555769.htm" target="_blank" rel="external">其实都没有</a></h2><p>地址👉<a href="https://music.163.com/#/song?id=25788001" target="_blank" rel="external">这里</a><br><img src="http://www.ccguitar.cn/pu/2017/6/17/2347_53928/1.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2017/6/17/2347_53928/2.gif" alt=""></p>
+<h2 id="你是我一愚蠢的一次浪漫"><a href="#你是我一愚蠢的一次浪漫" class="headerlink" title="你是我一愚蠢的一次浪漫"></a><a href="https://www.jitatang.com/yulang.html" target="_blank" rel="external">你是我一愚蠢的一次浪漫</a></h2><p>地址👉<a href="https://music.163.com/#/song?id=502103677" target="_blank" rel="external">这里</a><br><img src="http://ovhahnebz.bkt.clouddn.com/yuchun1.gif" alt=""><br><img src="http://ovhahnebz.bkt.clouddn.com/yuchun2.gif" alt=""><br><img src="http://ovhahnebz.bkt.clouddn.com/yuchun3.gif" alt=""></p>
+<h2 id="从前慢"><a href="#从前慢" class="headerlink" title="从前慢"></a><a href="https://www.jitatang.com/26458.html" target="_blank" rel="external">从前慢</a></h2><p>地址👉<a href="http://www.xiami.com/song/xLBZZV9bd56?spm=a1z1s.3521865.23309997.34.HaoJvX" target="_blank" rel="external">这里</a><br><img src="http://ovhahnebz.bkt.clouddn.com/man1.gif" alt=""><br><img src="http://ovhahnebz.bkt.clouddn.com/man2.gif" alt=""></p>
+<h2 id="达尔文"><a href="#达尔文" class="headerlink" title="达尔文"></a><a href="http://www.jitaba.cn/jitapu/072013/5285.html" target="_blank" rel="external">达尔文</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=208917&auto=1&height=66"></iframe>
+
+<p><img src="http://www.jitaba.cn/upimg/allimg/1307/1_130724004300_1.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1307/1_130724004300_2.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1307/1_130724004300_3.jpg" alt=""></p>
+<h2 id="美好事物"><a href="#美好事物" class="headerlink" title="美好事物"></a><a href="http://www.ccguitar.cn/wy_html/858967587.htm" target="_blank" rel="external">美好事物</a></h2><p>地址👉<a href="http://music.163.com/#/song?id=454435312" target="_blank" rel="external">这里</a><br><img src="http://www.ccguitar.cn/pu/2016/12/19/1109_29189/1.jpg" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/12/19/1109_29189/2.jpg" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/12/19/1109_29189/3.jpg" alt=""></p>
+<h2 id="弯弯的月亮"><a href="#弯弯的月亮" class="headerlink" title="弯弯的月亮"></a><a href="https://www.jitatang.com/neqms.html" target="_blank" rel="external">弯弯的月亮</a></h2><p>地址👉<a href="https://music.163.com/#/song?id=109496" target="_blank" rel="external">这里</a><br><img src="http://ovhahnebz.bkt.clouddn.com/moon1.gif" alt=""><br><img src="http://ovhahnebz.bkt.clouddn.com/moon2.gif" alt=""></p>
+<h2 id="只道寻常"><a href="#只道寻常" class="headerlink" title="只道寻常"></a><a href="http://m.jitaba.cn/view.php?aid=9088" target="_blank" rel="external">只道寻常</a></h2><p>地址👉<a href="https://music.163.com/#/song?id=450048216" target="_blank" rel="external">这里</a></p>
 <p><img src="http://www.jitaba.cn/upimg/allimg/1701/1-1F11P03636.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1701/1-1F11P03636-50.jpg" alt=""></p>
 <h2 id="农夫渔夫"><a href="#农夫渔夫" class="headerlink" title="农夫渔夫"></a><a href="http://www.xiayiqu.com/pu/1165.html" target="_blank" rel="external">农夫渔夫</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=350760&auto=1&height=66"></iframe>
 
-<p><img src="http://www.xiayiqu.com/uploads/allimg/140204/1_140204215012_1.gif" alt=""></p>
 <h2 id="下雨的晚上"><a href="#下雨的晚上" class="headerlink" title="下雨的晚上"></a><a href="http://guitaristlou.pixnet.net/blog/post/360319904-下雨的晚上---黃玠" target="_blank" rel="external">下雨的晚上</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26620072&auto=1&height=66"></iframe>
 
 <p><img src="http://pic.pimg.tw/guitaristlou/1396235511-1895220529_l.jpg" alt=""><br><img src="http://pic.pimg.tw/guitaristlou/1396235516-2331221022_l.jpg" alt=""><br><img src="http://pic.pimg.tw/guitaristlou/1396235518-1419048928_l.jpg" alt=""></p>
-<h2 id="孤鸟的歌"><a href="#孤鸟的歌" class="headerlink" title="孤鸟的歌"></a><a href="http://www.jitaba.cn/jitapu/122013/5600.html" target="_blank" rel="external">孤鸟的歌</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=29715557&auto=1&height=66"></iframe>
-
-<p><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_1.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_2.jpg" alt=""><br><img src="http://www.jitaba.cn/upimg/allimg/1312/1_131204012452_3.jpg" alt=""></p>
 <h2 id="秋酿"><a href="#秋酿" class="headerlink" title="秋酿"></a><a href="http://www.ccguitar.cn/wy_html/564565830.htm" target="_blank" rel="external">秋酿</a></h2><p><em>网易云音乐版权保护不能生成外链，地址在👉<a href="https://music.163.com/#/song?id=30635613" target="_blank" rel="external">这里</a></em></p>
 <p><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/1.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/2.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/3.gif" alt=""><br><img src="http://www.ccguitar.cn/pu/2016/10/27/65734_80180/4.gif" alt=""></p>
 <h2 id="旅行的意义"><a href="#旅行的意义" class="headerlink" title="旅行的意义"></a><a href="http://www.ukulelecn.com/p/?p=675" target="_blank" rel="external">旅行的意义</a></h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=209326&auto=1&height=66"></iframe>
@@ -323,7 +355,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;最近在为下个月的一次小表演做准备，于是重新开始坚持练习，找到一些不错的歌，虽然有些不见的适合表演的场景，但是每一首难度适中，并且都很优美。所以总结起来，也方便自己随时查看。&lt;br&gt;
+      &lt;p&gt;更新一波&lt;br&gt;
     
     </summary>
     
