@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9sunrise9.github.io/"/>
-  <updated>2018-05-29T19:19:39.235Z</updated>
+  <updated>2018-05-29T19:23:29.983Z</updated>
   <id>https://9sunrise9.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://9sunrise9.github.io/2018/05/29/%E5%9D%90%E6%A0%87%E7%B3%BB%E5%92%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E9%97%B4%E8%BD%AC%E6%8D%A2/"/>
     <id>https://9sunrise9.github.io/2018/05/29/坐标系和坐标系间转换/</id>
     <published>2018-05-29T19:58:45.000Z</published>
-    <updated>2018-05-29T19:19:39.235Z</updated>
+    <updated>2018-05-29T19:23:29.983Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>部分常用坐标系、坐标系转换及角度。</p>
 <a id="more"></a>
@@ -95,7 +95,7 @@
 </tbody>
 </table>
 </div>
-<script type="math/tex; mode=display">\begin{array}{c|lcr}物质 & \text{状态} & \text{颜色} & \text{性质} & \text{保存方法} & \text{萃取颜色}\\\hline ~Cl_{2}~ & 气体 & 黄绿色 & 易液化 & 钢瓶存储 & 无 \\ ~Br_{2} & 液体 & 深红棕色 & 易挥发 & 水封保存 & 橙红色\\ ~I_{2}~ & 固体 & 紫黑色 & 易升华 & 棕色瓶子 & 紫色(上层)\\ \end{array}</script>]]></content>
+]]></content>
     
     <summary type="html">
     
