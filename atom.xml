@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9sunrise9.github.io/"/>
-  <updated>2018-05-29T19:09:20.988Z</updated>
+  <updated>2018-05-29T19:19:39.235Z</updated>
   <id>https://9sunrise9.github.io/</id>
   
   <author>
@@ -16,16 +16,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>坐标系和坐标系间转换</title>
     <link href="https://9sunrise9.github.io/2018/05/29/%E5%9D%90%E6%A0%87%E7%B3%BB%E5%92%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E9%97%B4%E8%BD%AC%E6%8D%A2/"/>
     <id>https://9sunrise9.github.io/2018/05/29/坐标系和坐标系间转换/</id>
-    <published>2018-05-29T18:11:19.687Z</published>
-    <updated>2018-05-29T19:09:20.988Z</updated>
+    <published>2018-05-29T19:58:45.000Z</published>
+    <updated>2018-05-29T19:19:39.235Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><hr>
-<p>title: 坐标系和坐标系间转换<br>date: 2018-05-29 15:58:45<br>tags: [折腾, 科研]<br>categories: [折腾, 科研]</p>
-<hr>
-<p>部分常用坐标系、坐标系转换及角度。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>部分常用坐标系、坐标系转换及角度。</p>
+<a id="more"></a>
 <h2 id="坐标系定义"><a href="#坐标系定义" class="headerlink" title="坐标系定义"></a>坐标系定义</h2><div class="table-container">
 <table>
 <thead>
@@ -97,45 +95,22 @@
 </tbody>
 </table>
 </div>
-]]></content>
+<script type="math/tex; mode=display">\begin{array}{c|lcr}物质 & \text{状态} & \text{颜色} & \text{性质} & \text{保存方法} & \text{萃取颜色}\\\hline ~Cl_{2}~ & 气体 & 黄绿色 & 易液化 & 钢瓶存储 & 无 \\ ~Br_{2} & 液体 & 深红棕色 & 易挥发 & 水封保存 & 橙红色\\ ~I_{2}~ & 固体 & 紫黑色 & 易升华 & 棕色瓶子 & 紫色(上层)\\ \end{array}</script>]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: 坐标系和坐标系间转换&lt;br&gt;date: 2018-05-29 15:58:45&lt;br&gt;tags: [折腾, 科研]&lt;br&gt;categories: [折腾, 科研]&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;部分常用坐标系、坐标系转换及角度。&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Reinforcement Learning Guidance</title>
-    <link href="https://9sunrise9.github.io/2017/09/20/Guidance/"/>
-    <id>https://9sunrise9.github.io/2017/09/20/Guidance/</id>
-    <published>2017-09-20T05:11:14.000Z</published>
-    <updated>2017-09-20T05:14:12.659Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="http://ieeexplore.ieee.org/document/7004667/" target="_blank" rel="external">Adaptive Pinpoint and Fuel Efficient Mars Landing Using Reinforcement Learning</a></p>
-<a id="more"></a>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://ieeexplore.ieee.org/document/7004667/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adaptive Pinpoint and Fuel Efficient Mars Landing Using Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;部分常用坐标系、坐标系转换及角度。&lt;/p&gt;
     
     </summary>
     
       <category term="科研" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/"/>
     
-      <category term="RL" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/RL/"/>
+      <category term="建模" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/%E5%BB%BA%E6%A8%A1/"/>
     
     
       <category term="科研" scheme="https://9sunrise9.github.io/tags/%E7%A7%91%E7%A0%94/"/>
     
-      <category term="RL" scheme="https://9sunrise9.github.io/tags/RL/"/>
+      <category term="建模" scheme="https://9sunrise9.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
