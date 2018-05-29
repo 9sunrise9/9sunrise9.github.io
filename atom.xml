@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9sunrise9.github.io/"/>
-  <updated>2017-09-20T05:14:12.659Z</updated>
+  <updated>2018-05-29T19:09:20.988Z</updated>
   <id>https://9sunrise9.github.io/</id>
   
   <author>
@@ -14,6 +14,102 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://9sunrise9.github.io/2018/05/29/%E5%9D%90%E6%A0%87%E7%B3%BB%E5%92%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E9%97%B4%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://9sunrise9.github.io/2018/05/29/坐标系和坐标系间转换/</id>
+    <published>2018-05-29T18:11:19.687Z</published>
+    <updated>2018-05-29T19:09:20.988Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><hr>
+<p>title: 坐标系和坐标系间转换<br>date: 2018-05-29 15:58:45<br>tags: [折腾, 科研]<br>categories: [折腾, 科研]</p>
+<hr>
+<p>部分常用坐标系、坐标系转换及角度。<br><a id="more"></a></p>
+<h2 id="坐标系定义"><a href="#坐标系定义" class="headerlink" title="坐标系定义"></a>坐标系定义</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th style="text-align:left">原点$o$</th>
+<th style="text-align:left">$ox$</th>
+<th>$oy$</th>
+<th style="text-align:left">$oz$</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>星球惯性系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>星球固联系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>当地地理位置系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>地面系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>弹体系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>速度系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>弹道系</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: 坐标系和坐标系间转换&lt;br&gt;date: 2018-05-29 15:58:45&lt;br&gt;tags: [折腾, 科研]&lt;br&gt;categories: [折腾, 科研]&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;部分常用坐标系、坐标系转换及角度。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Reinforcement Learning Guidance</title>
@@ -293,8 +389,8 @@
   
   <entry>
     <title>Cover.连衣裙</title>
-    <link href="https://9sunrise9.github.io/2017/08/30/%5BCover%5D%E8%BF%9E%E8%A1%A3%E8%A3%99/"/>
-    <id>https://9sunrise9.github.io/2017/08/30/[Cover]连衣裙/</id>
+    <link href="https://9sunrise9.github.io/2017/08/29/%5BCover%5D%E8%BF%9E%E8%A1%A3%E8%A3%99/"/>
+    <id>https://9sunrise9.github.io/2017/08/29/[Cover]连衣裙/</id>
     <published>2017-08-30T02:22:49.000Z</published>
     <updated>2017-08-31T02:32:19.463Z</updated>
     
