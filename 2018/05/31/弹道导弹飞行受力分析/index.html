@@ -17,10 +17,12 @@
 
 
 
-  <meta name="description" content="层楼终究误少年，自由早晚乱余生"/>
+  <meta name="description" content="弹道导弹飞行受力分析"/>
 
 
 
+
+  <meta name="keywords" content="科研, 建模, 9sunrise9" />
 
 
 
@@ -40,7 +42,7 @@
 
 
 
-<link rel="canonical" href="https://9sunrise9.github.io/archives/2017/08/"/>
+<link rel="canonical" href="https://9sunrise9.github.io/2018/05/31/弹道导弹飞行受力分析/"/>
 
 
 
@@ -89,11 +91,7 @@
   window.config = {"title":"9sunrise9","subtitle":null,"description":"层楼终究误少年，自由早晚乱余生","author":"9sunrise9","language":"zh-cn","timezone":null,"url":"https://9sunrise9.github.io","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":{"color":"Default","toc":true,"fancybox":true,"pjax":true},"deploy":{"type":"git","repo":"https://github.com/9sunrise9/9sunrise9.github.io.git","branch":"master"},"ignore":[],"favicon":"/favicon.ico","index_generator":{"per_page":10,"order_by":"-date","path":""},"plugins":"hexo-math","kramed":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"feed":{"type":"atom","limit":20,"hub":"","content":true,"content_limit":140,"content_limit_delim":"","path":"atom.xml"},"tag_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2017,"rss":"default","menu":{"Home":"/","Archives":"/archives/","Tags":"/tags","Categories":"/categories","About":"/about"},"copyright":{"enable":true,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":true,"qrCode":{"wechat":"/images/Wechat.jpg","alipay":"/images/alipay.jpg"}},"social":{"email":"9sunrise945@gmail.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"weibo":null,"zhihu":null,"douban":null,"pocket":null,"instagram":"https://instagram.com/sunrisehit"},"mathjax":{"enable":true,"per_page":true,"cdn":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"han":true,"version":"2.8.0"};
 </script>
 
-    <title>
-  
-    归档 - 9sunrise9
-  
-</title>
+    <title> 弹道导弹飞行受力分析 - 9sunrise9 </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -223,95 +221,143 @@
           <div id="content" class="content">
             
   
-  <section id="archive" class="archive">
-    
-      
-        <div class="archive-title">
-          <span class="archive-post-counter">
-            目前共计 9 篇日志
-          </span>
-        </div>
-      
-    
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          弹道导弹飞行受力分析
+        
+      </h1>
 
-    
-      
+      <div class="post-meta">
+        <span class="post-time">
+          2018-05-31
+        </span>
         
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2017</h2>
+          <div class="post-category">
+            
+              <a href="/categories/科研/">科研</a>
+            
+              <a href="/categories/科研/建模/">建模</a>
+            
           </div>
         
-      
-
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-30
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/30/hexo-搭建小记/" class="archive-post-link">
-            hexo 搭建小记
-          </a>
-        </span>
+        
       </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#受力分析"><span class="toc-text">受力分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#气动力与气动力矩"><span class="toc-text">气动力与气动力矩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#气动力"><span class="toc-text">气动力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#气动力矩"><span class="toc-text">气动力矩</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <link rel="stylesheet" href="/assets/css/hint.min.css"></link><script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>刚体导弹在空间中的 6-DOF 运动可以分为质心的运动和绕质心的运动。包括气动力和气动力矩，推力和推力矩、扰动力和扰动力矩、重力。理想情况下，推力经过质心，不产生推力矩，忽略扰动力和扰动力矩的情况下，最主要的外力时气动力。</p>
+<a id="more"></a>
+<h2 id="受力分析"><a href="#受力分析" class="headerlink" title="受力分析"></a>受力分析</h2><p>刚体在空间中的 6—DOF 运动可以看作质心的运动和绕质心的旋转运动。根据牛顿第二定律有，<br>$$<br>m\frac{d\pmb V}{dt} = \pmb F, \space \space \frac{d\pmb H}{dt} = \pmb M<br>$$<br>其中 $\pmb F$ 表示合外力总矢量， $\pmb H$ 表示刚体对质心的动量矩， $\pmb M$ 表示合外力主矩。</p>
+<blockquote>
+<p>✨</p>
+<ol>
+<li><p>转动物体的力矩等于角动量的变化率，这是因为，<br>$$<br>\pmb H = \pmb r \times \pmb P = \pmb r \times (m \pmb V) = \pmb r \times (m \times r \pmb \omega) = mr^2\pmb \omega = I \pmb \omega<br>$$<br>其中$I$ 是转动惯量，且角动量$\pmb H$ 的方向由角速度决定，符合右手定则；</p>
+</li>
+<li><p>上述定律需满足刚体是常质量的假设，且运动是在惯性系内考察的。</p>
+</li>
+<li><p>运用固化原理，瞬时变质量系的动力学方程为：<br>$$<br>m(t)\frac{d\pmb V}{dt} = \pmb F +\pmb P, \space \space \frac{d\pmb H}{dt} = \pmb M + \pmb M_P<br>$$<br>其中$P$ 表示推力矢量， $\pmb M_P$ 表示推力矩，当推力经过质心时，$\pmb M_P = 0$;</p>
+</li>
+<li><p>此定律略去哥式惯性力，即液体流动导致导弹旋转的力，以及由发动机液体流动产生的变分力。</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="气动力与气动力矩"><a href="#气动力与气动力矩" class="headerlink" title="气动力与气动力矩"></a>气动力与气动力矩</h2><h3 id="气动力"><a href="#气动力" class="headerlink" title="气动力"></a>气动力</h3><h3 id="气动力矩"><a href="#气动力矩" class="headerlink" title="气动力矩"></a>气动力矩</h3>
+      
+    </div>
+
     
       
-        
-        
-
-        
       
 
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-30
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/30/[Cover]连衣裙/" class="archive-post-link">
-            Cover.连衣裙
-          </a>
-        </span>
-      </div>
-    
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>原文作者: </span>
+      <a href="https://9sunrise9.github.io">9sunrise9</a>
+    </p>
+    <p class="copyright-item">
+      <span>原文链接: </span>
+      <a href="https://9sunrise9.github.io/2018/05/31/弹道导弹飞行受力分析/">https://9sunrise9.github.io/2018/05/31/弹道导弹飞行受力分析/</a>
+    </p>
+    <p class="copyright-item">
+      <span>许可协议: </span>
       
-        
-        
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
 
-        
+
+
       
+      
+  <div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/images/Wechat.jpg" title="wechat">
+        </label>
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/images/alipay.jpg" title="alipay">
+        </label>
+      
+    </div>
+  </div>
 
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-29
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/29/最近在练的谱子/" class="archive-post-link">
-            最近在练的谱子
-          </a>
-        </span>
-      </div>
     
-  </section>
 
-  
-  <nav class="pagination">
     
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/科研/">科研</a>
+            
+              <a href="/tags/建模/">建模</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2018/05/29/坐标系和坐标系间转换/">
+        <span class="next-text nav-default">坐标系和坐标系间转换</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
 
 
           </div>
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
       </main>
@@ -390,6 +436,11 @@
     </div>
 
     
+  
+  
+
+  
+
 
 
     

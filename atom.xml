@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9sunrise9.github.io/"/>
-  <updated>2018-05-31T20:47:36.684Z</updated>
+  <updated>2018-05-31T21:30:22.531Z</updated>
   <id>https://9sunrise9.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>弹道导弹飞行受力分析</title>
+    <link href="https://9sunrise9.github.io/2018/05/31/%E5%BC%B9%E9%81%93%E5%AF%BC%E5%BC%B9%E9%A3%9E%E8%A1%8C%E5%8F%97%E5%8A%9B%E5%88%86%E6%9E%90/"/>
+    <id>https://9sunrise9.github.io/2018/05/31/弹道导弹飞行受力分析/</id>
+    <published>2018-05-31T21:03:00.000Z</published>
+    <updated>2018-05-31T21:30:22.531Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" href="/assets/css/hint.min.css"></link><script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>刚体导弹在空间中的 6-DOF 运动可以分为质心的运动和绕质心的运动。包括气动力和气动力矩，推力和推力矩、扰动力和扰动力矩、重力。理想情况下，推力经过质心，不产生推力矩，忽略扰动力和扰动力矩的情况下，最主要的外力时气动力。</p><a id="more"></a><h2 id="受力分析"><a href="#受力分析" class="headerlink" title="受力分析"></a>受力分析</h2><p>刚体在空间中的 6—DOF 运动可以看作质心的运动和绕质心的旋转运动。根据牛顿第二定律有，<br>$$<br>m\frac{d\pmb V}{dt} = \pmb F, \space \space \frac{d\pmb H}{dt} = \pmb M<br>$$<br>其中 $\pmb F$ 表示合外力总矢量， $\pmb H$ 表示刚体对质心的动量矩， $\pmb M$ 表示合外力主矩。</p><blockquote><p>✨</p><ol><li><p>转动物体的力矩等于角动量的变化率，这是因为，<br>$$<br>\pmb H = \pmb r \times \pmb P = \pmb r \times (m \pmb V) = \pmb r \times (m \times r \pmb \omega) = mr^2\pmb \omega = I \pmb \omega<br>$$<br>其中$I$ 是转动惯量，且角动量$\pmb H$ 的方向由角速度决定，符合右手定则；</p></li><li><p>上述定律需满足刚体是常质量的假设，且运动是在惯性系内考察的。</p></li><li><p>运用固化原理，瞬时变质量系的动力学方程为：<br>$$<br>m(t)\frac{d\pmb V}{dt} = \pmb F +\pmb P, \space \space \frac{d\pmb H}{dt} = \pmb M + \pmb M_P<br>$$<br>其中$P$ 表示推力矢量， $\pmb M_P$ 表示推力矩，当推力经过质心时，$\pmb M_P = 0$;</p></li><li><p>此定律略去哥式惯性力，即液体流动导致导弹旋转的力，以及由发动机液体流动产生的变分力。</p></li></ol></blockquote><h2 id="气动力与气动力矩"><a href="#气动力与气动力矩" class="headerlink" title="气动力与气动力矩"></a>气动力与气动力矩</h2><h3 id="气动力"><a href="#气动力" class="headerlink" title="气动力"></a>气动力</h3><h3 id="气动力矩"><a href="#气动力矩" class="headerlink" title="气动力矩"></a>气动力矩</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;刚体导弹在空间中的 6-DOF 运动可以分为质心的运动和绕质心的运动。包括气动力和气动力矩，推力和推力矩、扰动力和扰动力矩、重力。理想情况下，推力经过质心，不产生推力矩，忽略扰动力和扰动力矩的情况下，最主要的外力时气动力。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="建模" scheme="https://9sunrise9.github.io/categories/%E7%A7%91%E7%A0%94/%E5%BB%BA%E6%A8%A1/"/>
+    
+    
+      <category term="科研" scheme="https://9sunrise9.github.io/tags/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="建模" scheme="https://9sunrise9.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>坐标系和坐标系间转换</title>
@@ -173,7 +199,7 @@
     <link href="https://9sunrise9.github.io/2017/08/30/%5BCover%5D%E8%BF%9E%E8%A1%A3%E8%A3%99/"/>
     <id>https://9sunrise9.github.io/2017/08/30/[Cover]连衣裙/</id>
     <published>2017-08-30T14:22:49.000Z</published>
-    <updated>2017-08-31T02:32:19.463Z</updated>
+    <updated>2018-05-31T21:02:45.649Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" href="/assets/css/hint.min.css"></link><script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一年多以前简单记录的一首歌，最后看了一眼谱子还弹错了。就当是视频test吧。<br><a id="more"></a></p><div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://ovhahnebz.bkt.clouddn.com/%E8%BF%9E%E8%A1%A3%E8%A3%99_cover_video.mp4","pic":" http://ovhahnebz.bkt.clouddn.com/%E8%BF%9E%E8%A1%A3%E8%A3%99_cover.png"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"9E2E3368B56CDBB4","token":"tokendemo","addition":["https://dplayer.daoapp.io/bilibili?aid"]}});</script><!-- dplayer used1 -->]]></content>
     
