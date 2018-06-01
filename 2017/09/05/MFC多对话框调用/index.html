@@ -307,6 +307,8 @@
 </code></pre><p>代码如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">void</span> CRainDlg::onButtonClick()</div><div class="line">&#123;</div><div class="line">	CWindDlg *pWind = <span class="keyword">new</span> CwindDlg()；  <span class="comment">//实例化一个pWind指针</span></div><div class="line">	pWind-&gt;Create(IDD_DIALOG1,<span class="keyword">this</span>);   <span class="comment">//生成WindDlg</span></div><div class="line">    pWind-&gt;ShowWindow(SW_SHOW);        <span class="comment">//显示对话框</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>需要引起注意的是，声明一个新的类指针和初始化它是两个概念。声明一个类指针并不会给这个指针分配地址，只有初始化这个类指针的时候会给这个指针分配地址，并且会调用这个类的构造函数。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+</blockquote>
+<blockquote>
 <p>另外涉及到一个C++中特殊的指针，<code>this</code>指针，只想当前窗口。<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
 </blockquote>
 <h3 id="子对话框访问主对话框的成员变量"><a href="#子对话框访问主对话框的成员变量" class="headerlink" title="子对话框访问主对话框的成员变量"></a>子对话框访问主对话框的成员变量</h3><ol>
