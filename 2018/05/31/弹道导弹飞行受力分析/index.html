@@ -89,7 +89,7 @@
 
 
 <script>
-  window.config = {"title":"9sunrise9","subtitle":null,"description":"层楼终究误少年，自由早晚乱余生","author":"9sunrise9","language":"zh-cn","timezone":null,"url":"https://9sunrise9.github.io","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":{"color":"Default","toc":true,"fancybox":true,"pjax":true},"deploy":{"type":"git","repo":"https://github.com/9sunrise9/9sunrise9.github.io.git","branch":"master"},"ignore":[],"favicon":"/favicon.ico","index_generator":{"per_page":10,"order_by":"-date","path":""},"plugins":"hexo-math","mathjax2":true,"kramed":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true},"category_generator":{"per_page":10},"feed":{"type":"atom","limit":20,"hub":"","content":true,"content_limit":140,"content_limit_delim":"","path":"atom.xml"},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"tag_generator":{"per_page":10},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2017,"rss":"default","menu":{"Home":"/","Archives":"/archives/","Tags":"/tags","Categories":"/categories","About":"/about"},"copyright":{"enable":true,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":true,"qrCode":{"wechat":"/images/Wechat.jpg","alipay":"/images/alipay.jpg"}},"social":{"email":"9sunrise945@gmail.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"weibo":null,"zhihu":null,"douban":null,"pocket":null,"instagram":"https://instagram.com/sunrisehit"},"mathjax":{"enable":true,"per_page":true,"cdn":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"han":true,"version":"2.8.0"};
+  window.config = {"title":"9sunrise9","subtitle":null,"description":"层楼终究误少年，自由早晚乱余生","author":"9sunrise9","language":"zh-cn","timezone":null,"url":"https://9sunrise9.github.io","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":{"color":"Default","toc":true,"fancybox":true,"pjax":true},"deploy":{"type":"git","repo":"https://github.com/9sunrise9/9sunrise9.github.io.git","branch":"master"},"ignore":[],"favicon":"/favicon.ico","index_generator":{"per_page":10,"order_by":"-date","path":""},"plugins":"hexo-math","mathjax2":true,"kramed":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"feed":{"type":"atom","limit":20,"hub":"","content":true,"content_limit":140,"content_limit_delim":"","path":"atom.xml"},"tag_generator":{"per_page":10},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2017,"rss":"default","menu":{"Home":"/","Archives":"/archives/","Tags":"/tags","Categories":"/categories","About":"/about"},"copyright":{"enable":true,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":true,"qrCode":{"wechat":"/images/Wechat.jpg","alipay":"/images/alipay.jpg"}},"social":{"email":"9sunrise945@gmail.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"weibo":null,"zhihu":null,"douban":null,"pocket":null,"instagram":"https://instagram.com/sunrisehit"},"mathjax":{"enable":true,"per_page":true,"cdn":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"han":true,"version":"2.8.0"};
 </script>
 
     <title> 弹道导弹飞行力学简析 - 9sunrise9 </title>
@@ -510,16 +510,20 @@ m \frac{d\pmb V}{dt} = \left[ i\frac{dV}{dt}+jV\dot\theta  - kV\psi_v \cos{\thet
 \begin{aligned}
  &\frac{dV}{dt}= (P\cos{\alpha}\cos{\beta} - X - mg\sin{\theta})\\  
  &V\frac{ d\theta}{dt} = P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\sin{\gamma_v}) + Y\cos{\psi_V}- Z\sin{\gamma_V} - mg\sin{\theta}\\  
- & -V\frac {d\gamma_v}{dt} \cos{\theta} = P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\cos{\gamma_v}) + \sin{\gamma_V} + Z\cos{\gamma_V}\\
+ & -V\frac {d\psi_v}{dt} \cos{\theta} = P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\cos{\gamma_v}) + \sin{\gamma_V} + Z\cos{\gamma_V}\\
+
 &J_x\frac{d\omega_x}{dt} + (J_z - J_y)\omega_z\omega_y = m_xqSL +M_{F_x}\\
 &J_y\frac{d\omega_y}{dt} + (J_x - J_z)\omega_x\omega_z = m_yqSL+M_{F_y}\\
 &J_z\frac{d\omega_y}{dt} + (J_y - J_x)\omega_y\omega_z = m_zqSL+M_{F_z}\\
+
 &V_x= V\cos{\theta}\cos{\psi_V}\\
 &V_y= V\sin{\theta}\\
 &V_z= -V\cos{\theta}\sin{\psi_V}\\
+
 &\frac{d\vartheta}{dt} = \omega_y \sin{\gamma} + \omega_z\cos{\gamma}\\
 &\frac{d\psi}{dt} = \frac{1}{\cos{\vartheta}}(\omega_y \cos{\gamma} + \omega_z\sin{\gamma})\\
 &\frac{d\gamma}{dt} = \omega_x -  \tan{\vartheta}(\omega_y\cos{\gamma} - \omega_z\sin{\gamma})\\
+
 &\frac{dm}{dt} = m_c,\space \space m(t) = m_0 - \int_{t_0}^{t_f}m_c dt
 \end{aligned} \label{g}
 \end{equation}</script><h3 id="滚转弹运动方程组"><a href="#滚转弹运动方程组" class="headerlink" title="滚转弹运动方程组"></a>滚转弹运动方程组</h3><h4 id="动力学方程"><a href="#动力学方程" class="headerlink" title="动力学方程"></a>动力学方程</h4><p>滚转弹弹道系内的质心运动方程需要附加操纵力和操纵力矩。考虑前述弹推进器空间穿透器，$F_c$ 在准弹体系中，气动力$\pmb R$ 在准速度坐标系中进行分解，按照准弹体系和弹道系以及准速度系和弹道系之间的关系即可解得滚转弹质心运动方程。</p>
@@ -608,26 +612,33 @@ Z\end{array}\right]+L(\theta,\psi_V)\left[\begin{array}{cccc}
  &
  \begin{aligned}
  V\frac{ d\theta}{dt} = &P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\sin{\gamma_v}) + Y\cos{\psi_V}- Z\sin{\gamma_V} - mg\sin{\theta} +\\
- &\frac{T}{\pi} \sin{\dot\gamma^*t_c}[K_y(\cos{\alpha^*}\cos{\gamma_V^*} - \sin{\alpha^*}\sin{\beta^*}\sin{\gamma_V^*}) - K_Z\sin{\gamma_V^*}\cos{\beta^*}]
+ &\frac{T}{\pi} \sin{\dot\gamma^*t_c}[K_y(\cos{\alpha^*}\cos{\gamma_V^*} - \sin{\alpha^*}\sin{\beta^*}\sin{\gamma_V^*}) - K_z\sin{\gamma_V^*}\cos{\beta^*}]
  \end{aligned}\\  
  & \begin{aligned}
-  -V\frac {d\gamma_v}{dt} \cos{\theta} = &P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\cos{\gamma_v}) + \sin{\gamma_V} + Z\cos{\gamma_V}+\\
-  &\frac{T}{\pi} \sin{\dot\gamma^*t_c}[K_y(\sin{\alpha^*}\sin{\beta^*}\cos{\gamma_V^*} - \cos{\alpha^*}\sin{\gamma_V^*}) - K_Z\cos{\gamma_V^*}\cos{beta^*}]
+  -V\frac {d\psi_V}{dt} \cos{\theta} = &P(\sin{\alpha}\cos{\gamma_v}+\cos{\alpha}\sin{\beta}\cos{\gamma_v}) + \sin{\gamma_V} + Z\cos{\gamma_V}+\\
+  &\frac{T}{\pi} \sin{\dot\gamma t_c}[K_y(\sin{\alpha^*}\sin{\beta^*}\cos{\gamma_V^*} - \cos{\alpha^*}\sin{\gamma_V^*}) - K_z\cos{\gamma_V^*}\cos{\beta^*}]
  \end{aligned}  \\
+
 &J_x\frac{d\omega_x}{dt} =  -(J_z - J_x)\omega_z \omega_y \\  
 &J_y\frac{d\omega_y}{dt}  = m_y qSL+\frac{T}{\pi}\sin(\gamma_c+\dot \gamma t_c)\sin(\dot \gamma t_c)(x_F-x_G)- (J_x - J_z)\omega_x \omega_z  +J_z\omega_z \dot \gamma\\  
 &J_z\frac{d\omega_y}{dt}  = m_zqSL -\frac{T}{\pi}\cos(\gamma_c+\dot \gamma t_c)\sin(\dot \gamma t_c)(x_F-x_G) - (J_y - J_x)\omega_y \omega_z  + J_y\omega_y \dot \gamma\\
+
 &V_x= V\cos{\theta}\cos{\psi_V}\\
 &V_y= V\sin{\theta}\\
 &V_z= -V\cos{\theta}\sin{\psi_V}\\
+
 &\frac{d\gamma}{dt} = \omega_x - \omega_y\tan{\vartheta}\\
 &\frac{d\psi}{dt} = \frac{1}{cos{\vartheta}}\omega_y\\
 &\frac{d\vartheta}{dt} = \omega_z\\
+
+&\frac{dm}{dt} = m_c,\space \space m(t) = m_0 - \int_{t_0}^{t_f}m_c dt\\
+
 &\sin{\beta^*} = \cos{\theta}\sin{(\psi - \psi_V)}\\
 & \sin{\gamma_V^*} = \tan{\beta^*}\tan{\theta}\\
 &\alpha^* = \vartheta -\arcsin{\frac{\sin{\theta}}{\cos{\beta^*}}}
 \end{aligned}
-\end{equation}</script><blockquote>
+\end{equation}</script><p>其中，$K_y = \sin{(\gamma_c+\dot \gamma t_c)}$ ， $K_z = - \cos{(\gamma_c+\dot \gamma t_c)}$ 。</p>
+<blockquote>
 <p>✨：力矩系数$m_y,m_z$ 是由于迎面气流不对称的流过弹体所产生的，这种现象是由安装误差，操纵机构，攻角和侧滑角，转动角速度，马格努斯效应，陀螺效应等引起的。可以近似的写成线性形式。此处取总的气动力矩系数，值得注意的是，在考虑滚转弹时，应对马格努斯力矩效应和陀螺效应引起的力矩系数进行考虑，并包含在$m_y,m_z$ 内。</p>
 </blockquote>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">钱杏芳，导弹飞行力学</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
